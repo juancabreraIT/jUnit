@@ -28,14 +28,25 @@ public class JunitAnnotation {
 	public static void afterClass() {
 		System.out.println("in after class");
 	}
-	
-	@Test
-	public void test() {
-		System.out.println("in test");
-	}
-	
+		
 	@Ignore
 	public void ignoreTest() {
 		System.out.println("in ignore test");
 	}
+	
+	@Test
+	public void testCase0() {
+		System.out.println("in test case 0");
+	}
+	
+    @Test
+    public void testCase1() {
+       System.out.println("in test case 1");
+    }
+
+    @Test
+    public void testCase2() {
+       System.out.println("in test case 2");
+    }
+   
 }
