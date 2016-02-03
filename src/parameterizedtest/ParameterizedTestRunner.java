@@ -1,0 +1,21 @@
+package parameterizedtest;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+public class ParameterizedTestRunner {
+
+	public static void main(String[] args) {
+		
+		Result result = JUnitCore.runClasses(PrimeNumberCheckerTest.class);
+		
+		for(Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
+		
+		System.out.println("\nTests run: " + result.getRunCount());
+		System.out.println("Tests failed: " + result.getFailureCount());
+	}
+
+}
