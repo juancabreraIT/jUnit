@@ -1,4 +1,4 @@
-package com.java.junit;
+package java.junit;
 
 import static org.junit.Assert.assertEquals;
 

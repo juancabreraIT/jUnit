@@ -1,10 +1,10 @@
-package com.java.exe;
+package java.exe;
+
+import java.junit.TestJunit;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
-
-import com.java.junit.TestJunit;
 
 public class TestRunner {
 
